@@ -1,0 +1,27 @@
+.game_board{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+}
+
+/* whack a bee game style */
+.board_piece{
+ width: 200px;
+ height: 200px;
+ border-style: solid;
+ border-color: blue;
+}
+
+.board{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 618px;
+    height: 618px;
+}
+
+.bee{
+    background-image: url('../images/BTECH.png');
+    background-size: cover;
+}
