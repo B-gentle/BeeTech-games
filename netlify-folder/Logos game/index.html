@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link rel="icon" type="gif/image" href="../assets/BTECH.png">
+    <title>Logos Game</title>
+</head>
+
+<body>
+
+    <form action="javascript:void(0);" class="player-name-form" onsubmit="showGame();">
+        <div>
+            <div>
+                <input type="text" id="player-name-input-1" placeholder="Player name" />
+            </div>
+
+            <div>
+                <button type="submit" id="enter-button">Proceed to play Game</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="game">
+        <div class="game-header">
+            <h2>Logos Game</h2>
+            <a href="#" id="help-button" onclick="showHelp()">Help</a>
+        </div>
+        <p class="help">The game comprises of twelve logos, two of which are the same
+            The aim is to click two similar logos in a row. If it matches you get a score till you match all logos
+            consecutively
+            if it doesn't it restarts the game.
+        </p>
+        <small>Click the tiles to start</small>
+
+        <div class="score-board">
+            <h3><span id="player-name-display-1"></span> Score: <span id="resultPOne"></span></h3>
+            <h3><span id="player-name-display-2"></span>  <span id="resultPTwo"></span></h3>
+        </div>
+
+        <div class="board">
+
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
